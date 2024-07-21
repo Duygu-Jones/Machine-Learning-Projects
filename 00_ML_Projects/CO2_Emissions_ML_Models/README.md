@@ -59,7 +59,7 @@
    - Final Model and Prediction
    - Feature Importances: The importance of features was analyzed using Ridge and Lasso regression techniques.
 
-_As this dataset was compiled for analytical and educational purposes, steps suitable for beginners will be followed to ensure a thorough understanding._
+*As this dataset was compiled for analytical and educational purposes, each step was broken down into beginner-friendly steps, and explained in detail to ensure a thorough understanding.*
 
 ## Key Insights and Conclusions:
 
