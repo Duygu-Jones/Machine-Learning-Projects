@@ -1,5 +1,5 @@
 <h1 align="center">
-📍 CO2 Emissions Analysis and Prediction 🚗🌍
+🌍 CO2 Emissions Analysis and Prediction 🚗
   
 📈Linear Regression and Regularization Project🚀
 </h1>
@@ -45,7 +45,7 @@
 1. **Exploratory Data Analysis (EDA)**:
 
 - Analyze CO2 Emission Patterns
-- Assess Impact of External Factors
+- Assess the Impact of External Factors
 - Feature Engineering
 
 2. **Machine Learning Model**:
@@ -88,15 +88,12 @@ To further improve the analysis and model performance:
 
 ## ⬇️Installation
 
-*To view the notebook online, visit my **Kaggle** profile.
-*If you find this work helpful, don't forget to give it an 👍 UPVOTE! and join the discussion!\*
+*To view the notebook online, visit my **Kaggle** profile.*
+*If you find this work helpful, don't forget to give it an 👍 UPVOTE! and join the discussion!*
+**Kaggle Notebook:** [CO2 Emissions (EDA and ML) Linear Regression](https://www.kaggle.com/code/duygujones/co2-emissions-analysis-and-prediction)
 
-- **Kaggle Notebook**: [CO2 Emissions (EDA and ML) Linear Regression](https://www.kaggle.com/code/duygujones/co2-emissions-analysis-and-prediction)
-
-_This dataset is available to download from the Kaggle website at;_
-
-- [CO2 Emissions_Canada.csv](https://www.kaggle.com/datasets/debajyotipodder/co2-emission-by-vehicles)
-- 📍Acknowledgements: [Official open data website of Canada Government](https://open.canada.ca/data/en/dataset/98f1a129-f628-4ce4-b24d-6f16bf24dd64#wb-auto-6)
+ - This dataset is available to download on the Kaggle website: [CO2 Emissions_Canada.csv](https://www.kaggle.com/datasets/debajyotipodder/co2-emission-by-vehicles)
+ - Acknowledgements: Official open data website of Canada Government [Link](https://open.canada.ca/data/en/dataset/98f1a129-f628-4ce4-b24d-6f16bf24dd64#wb-auto-6)
 
 ## 🤝Contributing
 
