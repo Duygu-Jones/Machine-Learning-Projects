@@ -22,19 +22,18 @@ This repository contains a diverse collection of machine learning projects, each
 
 ---
 
-🤖 *For more of my work on Machine Learning models, visit my **Kaggle** profile. If you find it helpful, please give it an 👍 UPVOTE and join the discussion!* 
+🤖 *For more of my work on Machine Learning models, visit my profile: [**Kaggle/duygujones**](https://www.kaggle.com/duygujones/code).* <br>
+*If you find it helpful, please give it an 👍 UPVOTE and join the discussion!* 
 
-- [**Kaggle/duygujones** ](https://www.kaggle.com/duygujones/code)
+
 
 
 
 ## ⬇️Installation
 
 To run the notebooks and explore the projects locally, follow these steps:
-
-Clone the repository and open the Jupyter Notebook to explore.
-
-    git clone https://github.com/Duygu-Jones/Machine-Learning.git
+  - Clone the repository and open the Jupyter Notebook to explore.
+  -      git clone https://github.com/Duygu-Jones/Machine-Learning.git
     
    
 ## 🤝Contributing
