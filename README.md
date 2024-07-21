@@ -25,7 +25,7 @@ To run the notebooks and explore the projects locally, follow these steps:
 
 Clone the repository and open the Jupyter Notebook to explore.
 
-    git clone https://github.com/Duygu-Jones/EDA_Projects.git
+    git clone https://github.com/Duygu-Jones/Machine-Learning.git
     
    
 
