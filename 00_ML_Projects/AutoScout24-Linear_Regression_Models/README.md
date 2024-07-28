@@ -64,7 +64,7 @@
 *To view the notebook online, visit my **Kaggle** profile.*
 *If you find this work helpful, don't forget to give it an 👍 UPVOTE! and join the discussion!*
 
-  - **Kaggle Notebook:** [AutoScout24 Car Price Prediction -Linear Models🔥](https://www.kaggle.com/code/duygujones/autoscout24-car-price-prediction-linear-models?scriptVersionId=190182115)
+  - **Kaggle Notebook:** [AutoScout24 Car Price Prediction -Linear Models🔥](https://www.kaggle.com/code/duygujones/autoscout24-car-price-prediction-linear-models)
   - - This dataset is available to download on the Kaggle website: [AutoScout24_Car_Sales2019](https://www.kaggle.com/datasets/duygujones/autoscout24-car-sales2019)
 
 ## 🤝Contributing
