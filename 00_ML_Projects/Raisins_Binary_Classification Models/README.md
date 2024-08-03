@@ -1,5 +1,5 @@
 <h1 align="center">
-Raisins Binary Classification Models🍇📈
+🍇Raisins Binary Classification Models📈
   
 📈Prediction with Logistic Regression + KNN + SVM + DTC⚖️🔎
 </h1>
