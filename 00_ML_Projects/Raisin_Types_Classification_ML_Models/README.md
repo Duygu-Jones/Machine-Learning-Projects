@@ -1,88 +1,76 @@
 <h1 align="center">
-🌍 CO2 Emissions Analysis and Prediction 🚗
+🍇Raisins Binary Classification Models📈
   
-📈Linear Regression and Regularization Project🚀
+📈Prediction with Logistic Regression + KNN + SVM + DTC⚖️🔎
 </h1>
 
 <p align="center">
-  <img src="https://github.com/Duygu-Jones/Machine-Learning/blob/main/img/CO2emission.png?raw=true">
+  <img src="https://github.com/Duygu-Jones/Machine-Learning/blob/main/img/RaisinGrain2x.png?raw=true">
 </p>
 
-## Executive Summary:
+## Introduction
+This project aims to classify two different varieties of raisins (Besni and Keçimen) grown in Turkey using their morphological features. By performing Exploratory Data Analysis (EDA) and implementing logistic regression models, the goal is to build effective classification models for raisin variety prediction. the aim is to enhance the understanding of raisin varieties and improve classification accuracy.
 
-- This project aims to analyse and predict CO2 emissions from vehicles in Canada.
-- By examining the dataset, performing Exploratory Data Analysis (EDA), and developing predictive models, we aim to understand the relationships between various factors and CO2 emissions.
-- The objective of creating and using a model with the CO2 emission dataset is to build machine learning algorithms capable of accurately predicting vehicle CO2 emissions based on their characteristics.
-- By examining variables such as engine size, number of cylinders, and fuel consumption, the aim is to develop models that can evaluate the environmental impact of different vehicles and guide policy decisions aimed at reducing carbon emissions.
-- Additionally, these models can support automotive manufacturers in designing more fuel-efficient vehicles and help consumers make informed choices when selecting vehicles with lower carbon footprints.
-- Ultimately, the goal is to harness data-driven insights to mitigate the environmental impact of transportation and promote sustainable development.
-- _Evaluating model accuracy on both training and test sets is essential to determine whether the model is overfitting or underfitting the data, addressing the bias-variance tradeoff effectively_.
+## Objectives
+- Understand the dataset and its features.
+- Clean and prepare the data for modelling.
+- Feature engineering.
+- Implement logistic regression and other algorithms to classify raisin varieties.
+- Optimize model performance by tuning hyperparameters and focusing on important features.
+- Compare the performance of logistic regression with other classification algorithms.
+
+
+*The dataset and results are used for educational purposes, demonstrating the application of advanced machine learning techniques on real-world data. We aim to build an effective classification model to predict the type of raisin grains and gain a deeper understanding of machine learning techniques.
 
 ## About the Dataset
+The dataset contains two types of raisins (Keçimen and Besni) grown in Turkey. 
+Images of Kecimen and Besni raisin varieties were obtained with CVS. A total of 900 raisin grains were used, including 450 pieces from both varieties. These images were subjected to various stages of pre-processing and 7 morphological features were extracted.
 
-- **Dataset**: CO2 Emissions by Vehicle in Canada
-- **Content**: Data on CO2 emissions from vehicles with various attributes.
-- **Number of Rows**: 1067
-- **Number of Columns**: 12
+**Dataset:** Raisin Grain 
+- **Content:** 2 type of raisins (Besni(0) and Keçimen(1)).
+- **Number of Rows:** 900  
+- **Number of Columns:** 8  
 
-**Inputs:**
 
-- **Make**: Vehicle make
-- **Model**: Vehicle model
-- **Vehicle Class**: Vehicle class
-- **Engine Size**: Engine size (L)
-- **Cylinders**: Number of cylinders
-- **Transmission**: Transmission type
-- **Fuel Type**: Fuel type
-- **Fuel Consumption City**: Fuel consumption in city (L/100 km)
-- **Fuel Consumption Hwy**: Fuel consumption on highway (L/100 km)
-- **Fuel Consumption Comb (L/100 km)**: Combined fuel consumption (L/100 km)
-- **Fuel Consumption Comb (mpg)**: Combined fuel consumption (mpg)
-- **CO2 Emissions**: CO2 emissions (g/km)
+**INPUTS**
+- `Area`: The number of pixels within the boundaries of the raisin grain.
+- `Perimeter`: The distance between the boundaries of the raisin grain and the surrounding pixels.
+- `MajorAxisLength`: The length of the longest line that can be drawn on the raisin grain.
+- `MinorAxisLength`: The length of the shortest line that can be drawn on the raisin grain.
+- `Eccentricity`: A measure of the eccentricity of the ellipse which has the same moments as the raisins.
+- `ConvexArea`: The number of pixels in the smallest convex shell of the region formed by the raisin grain.
+- `Extent`: The ratio of the region formed by the raisin grain to the total pixels in the bounding box.
 
-## The project consists of two main phases:
+
+**Reference**
+- CINAR I., KOKLU M. and TASDEMIR S., (2020). Classification of Raisin Grains Using Machine Vision and Artificial Intelligence Methods, Gazi Journal of Engineering Sciences, vol. 6, no. 3, pp. 200-209, December, 2020, DOI: https://doi.org/10.30855/gmbd.2020.03.03
+
+
+## Conclusions:
+
+In this project, we performed a comprehensive analysis to classify raisin varieties using their morphological features. Here are the key steps and findings:
 
 1. **Exploratory Data Analysis (EDA)**:
+   - Conducted thorough EDA to understand the dataset.
+   - Identified and handled missing and duplicated values.
+   - Analyzed basic statistics and categorical and numerical features.
+   - Performed feature engineering, correlation analysis, and outlier detection.
 
-- Analyze CO2 Emission Patterns
-- Assess the Impact of External Factors
-- Feature Engineering
+2. **Machine Learning Models**:
+   - Implemented several machine learning models:
+     - **Logistic Regression**
+     - **Support Vector Machine (SVM)**
+     - **K-Nearest Neighbors (KNN)**
+     - **Decision Tree Classifier**
+   
+3. **Model Comparison and Selection**:
+   - Among all models, the **Grid Logistic Regression (GLR)** model demonstrated the highest accuracy and balanced performance.
+   - **GLR Model Performance**:
+     - Accuracy: 0.87
+     - Balanced precision and recall values.
+   - This indicates that the GLR model is robust and reliable for accurately identifying both raisin varieties.
 
-2. **Machine Learning Model**:
-   - Simple Linear Regression Model
-   - Multiple Linear Regression Model
-   - Polynomial Regression Model
-   - Scaling the Data
-   - Regularization
-     - Ridge regression was evaluated with cross-validation and GridSearchCV was used to choose the best alpha value.
-     - Lasso regression was also evaluated similarly, with GridSearchCV used for parameter tuning.
-   - Final Model and Prediction
-   - Feature Importances: The importance of features was analyzed using Ridge and Lasso regression techniques.
-
-*As this dataset was compiled for analytical and educational purposes, each phase of the project was broken down into beginner-friendly steps and explained in detail to ensure a thorough understanding.*
-
-## Key Insights and Conclusions:
-
-1. **Fuel Consumption and Emissions**: Higher fuel consumption (L/100 km) directly results in higher CO2 emissions.
-2. **Engine Size Impact**: Vehicles with larger engine sizes and more cylinders produce more CO2 emissions.
-3. **Fuel Type Differences**: CO2 emissions vary significantly depending on the fuel type used.
-4. **Fuel Efficiency (mpg)**: Vehicles with higher miles per gallon (mpg) are more fuel-efficient and emit less CO2.
-
-## Recommendations:
-
-#### Machine Learning Perspective:
-
-To further improve the analysis and model performance:
-
-- Integrate real-time data and additional external factors to enhance prediction accuracy.
-- Experiment with different machine learning algorithms and hyperparameter tuning to find the best-performing model.
-- Consider deploying the model for dynamic CO2 emission adjustments based on predictions.
-
-#### Business Perspective:
-
-1. **Regulatory Advocacy**: Advocate for policies that tax high-emission vehicles and provide incentives for low-emission vehicles.
-2. **Product Design**: Focus on designing vehicles with optimized engine sizes and higher fuel efficiency (mpg) to reduce emissions.
-3. **Consumer Education**: Inform consumers about the benefits of fuel-efficient vehicles and their positive impact on the environment.
+The structured approach and thorough analysis ensured the selection of the most effective model for raisin classification.
 
 ---
 
@@ -90,14 +78,12 @@ To further improve the analysis and model performance:
 
 *To view the notebook online, visit my **Kaggle** profile.*
 *If you find this work helpful, don't forget to give it an 👍 UPVOTE! and join the discussion!*
-**Kaggle Notebook:** [CO2 Emissions (EDA and ML) Linear Regression](https://www.kaggle.com/code/duygujones/co2-emissions-analysis-and-prediction)
-
- - This dataset is available to download on the Kaggle website: [CO2 Emissions_Canada.csv](https://www.kaggle.com/datasets/debajyotipodder/co2-emission-by-vehicles)
- - Acknowledgements: Official open data website of Canada Government [Link](https://open.canada.ca/data/en/dataset/98f1a129-f628-4ce4-b24d-6f16bf24dd64#wb-auto-6)
+- **Kaggle Notebook:** [Raisins Binary Classification Prediction🍇📈](https://www.kaggle.com/code/duygujones/co2-emissions-analysis-and-prediction)
+- This dataset is available to download on the Kaggle website: [Raisin Dataset xlsx](https://www.kaggle.com/datasets/muratkokludataset/raisin-dataset)
 
 ## 🤝Contributing
 
-Contributions are welcome! If you have any improvements, suggestions, or additional datasets and EDA projects to share, please fork the repository and create a pull request.
+Contributions are welcome! If you have any improvements, suggestions, or additional datasets and projects to share, please fork the repository and create a pull request.
 
 <br>
 
