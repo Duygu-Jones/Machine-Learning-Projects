@@ -1,5 +1,5 @@
 <h1 align="center">
-Adult Income Classification💰💹
+Adult Income Level Classification💰💹
   
 Logistic Regression - SVM - KNN📈💵
 </h1>
