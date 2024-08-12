@@ -95,7 +95,7 @@ These controls are applied multiple times to ensure accuracy. The weights ensure
 *To view the notebook online, visit my **Kaggle** profile.*
 *If you find this work helpful, don't forget to give it an 👍 UPVOTE! and join the discussion!*
 
- - Kaggle Notebook:** [💵Income Classification (Logistic-KNN-SVM)💰](https://www.kaggle.com/code/duygujones/income-classification-logistic-knn-svm)
+ - Kaggle Notebook:** [💵Income Classification (Logistic-KNN-SVM)💰](https://www.kaggle.com/code/duygujones/income-classification-logistic-svm-knn)
  - The dataset is available to download on the Kaggle website / UCI Machine Learning Repository: [Adult Census Income](https://www.kaggle.com/datasets/uciml/adult-census-income)
 
 ## 🤝Contributing
