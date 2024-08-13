@@ -5,7 +5,7 @@ Logistic Regression - SVM - KNN📈💵
 </h1>
 
 <p align="center">
-  <img src="https://github.com/Duygu-Jones/Machine-Learning/blob/main/img/income2x.png?raw=true"
+  <img src="https://github.com/Duygu-Jones/Machine-Learning-Projects/blob/main/Income_Classification_ML_Models/income2x.png?raw=true"
 ">
 </p>
 
