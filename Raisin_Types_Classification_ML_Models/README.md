@@ -5,7 +5,7 @@
 </h1>
 
 <p align="center">
-  <img src="https://github.com/Duygu-Jones/Machine-Learning/blob/main/img/RaisinGrain2x.png?raw=true">
+  <img src="https://github.com/Duygu-Jones/Machine-Learning-Projects/blob/main/Raisin_Types_Classification_ML_Models/RaisinGrain2x.png?raw=true">
 </p>
 
 ## Introduction
