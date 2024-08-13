@@ -5,7 +5,7 @@
 </h1>
 
 <p align="center">
-  <img src="https://github.com/Duygu-Jones/Machine-Learning/blob/main/00_ML_Projects/AutoScout24-Linear_Regression_Models/wb/scout_img_wide.png?raw=true">
+  <img src="https://github.com/Duygu-Jones/Machine-Learning-Projects/blob/main/AutoScout24-Linear_Regression_Models/Autoscout_img2x.png?raw=true">
 </p>
 
 ## Executive Summary:
