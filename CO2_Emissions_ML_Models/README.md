@@ -5,7 +5,7 @@
 </h1>
 
 <p align="center">
-  <img src="https://github.com/Duygu-Jones/Machine-Learning/blob/main/img/CO2emission.png?raw=true">
+  <img src="https://github.com/Duygu-Jones/Machine-Learning-Projects/blob/main/CO2_Emissions_ML_Models/CO2emission.png?raw=true">
 </p>
 
 ## Executive Summary:
