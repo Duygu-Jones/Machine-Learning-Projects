@@ -1,5 +1,5 @@
 <h1 align="center">
-Adult Income Level Classification💰💹
+Predicting Income Levels with ML Classification Models💰💹
   
 Logistic Regression - SVM - KNN📈💵
 </h1>
@@ -78,7 +78,30 @@ These controls are applied multiple times to ensure accuracy. The weights ensure
 
 ----
 
-## Key Insights and Conclusions:
+## Conclusion:
+
+**Final Model:** SVM Model
+
+*Parameters:*
+- recall: 85,  
+- F1: 0.87   
+- PRC: 0.76  
+---
+
+In this project, we used logistic regression, SVM, and KNN models to predict income levels on an unbalanced dataset. We focused on F1 and recall scores to evaluate performance, as they are critical in **unbalanced datasets** where the minority class (higher income) is key.
+
+### Why SVM was Chosen:
+- **Balanced Performance**: The SVM model achieved a strong balance between precision and recall, with an F1 score of 0.87 and a recall of 0.85 on the test set. This makes it effective at identifying high-income individuals while keeping false positives low.
+- **Consistency**: SVM showed stable performance across training and test sets, indicating good generalization without overfitting.
+
+### Importance of F1 and Recall:
+- **F1 Score**: This metric combines precision and recall, ensuring the model performs well with both false positives and false negatives in mind.
+- **Recall**: Prioritizing recall ensures we capture most high-income individuals, which is vital in unbalanced datasets.
+
+📌 In short, the SVM model’s balanced precision and recall, along with its consistent performance, make it the best choice as the final model for predicting income levels.
+
+💹 It’s possible that with further parameter tuning, even better performance could be achieved, which could be worth exploring.
+
 
 ### Key Insights:
 - **Education and Occupation**: Higher education and certain occupations (e.g., executive roles) are strong predictors of higher income.
