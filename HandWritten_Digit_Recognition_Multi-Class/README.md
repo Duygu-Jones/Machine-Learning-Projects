@@ -1,116 +1,95 @@
 <h1 align="center">
-Predicting Income Levels with ML Classification Models💰💹
+Handwritten Digit Recognition with ML Classification Models🔢📝
   
-Logistic Regression - SVM - KNN📈💵
+SVM - Random Forest - Decision Tree 📈⚙️
 </h1>
 
 <p align="center">
-  <img src="https://github.com/Duygu-Jones/Machine-Learning-Projects/blob/main/Income_Classification_ML_Models/income2x.png?raw=true"
+  <img src="https://github.com/Duygu-Jones/Machine-Learning-Projects/blob/main/HandWritten_Digit_Recognition_Multi-Class/img/digits2x.png?raw=true"
 ">
 </p>
 
 ## Introduction
 
-This project aims to predict whether an individual's annual income exceeds $50,000 using the "Adult" dataset from the 1994 Census Bureau.
-- The performance of four machine learning models—Logistic Regression, K-Nearest Neighbors (KNN), and Support Vector Machine (SVM) — developed and compared. 
--  Data preprocessing, model training, evaluation, and comparison were conducted to identify the best-performing model for this classification task.
+The goal of this project is to accurately classify handwritten digits using a dataset of digit samples. The dataset comprises a sequence of 16 features representing various characteristics of the handwritten digits.
 
-### Objectives
+<p align="center">
+  <img src="https://github.com/Duygu-Jones/Machine-Learning-Projects/blob/main/HandWritten_Digit_Recognition_Multi-Class/img/digits3.png?raw=true"
+">
+</p>
 
-1. **Data Preprocessing**: Clean and encode data and handle missing values.
-2. **Model Development**: Implement Logistic Regression, K-Nearest Neighbors (KNN), and Support Vector Machine (SVM).
-3. **Model Training and Evaluation**: Train models on the training set and evaluate performance using accuracy, precision, recall, and F1-score metrics.
-4. **Model Comparison**: Compare models to identify the best performer.
-5. **Conclusion**: Summarized findings and provided recommendations for improvement.
 
-*The dataset and results are used for educational purposes, demonstrating the application of advanced machine learning techniques on real-world data. We aim to build effective machine-learning models to predict adults' income and gain a deeper understanding of machine-learning techniques.*
+## Problem Statement
+The accurate classification of handwritten digits is a critical task in the field of computer vision, with applications ranging from automated postal mail sorting to digit recognition in educational tools. Despite the availability of advanced machine learning techniques, achieving high accuracy in digit classification remains challenging due to variations in handwriting styles, sizes, and shapes. 
+
+This project aims to address this challenge by developing and evaluating three machine learning models—Support Vector Machine (SVM), Random Forest, and Decision Tree—to classify handwritten digits based on their trajectory characteristics. The goal is to determine which model performs best in terms of accuracy, precision, recall, and F1-score, thereby providing a robust solution for digit recognition tasks.
+
+The outcomes of this study will contribute to the understanding of model performance on image-based data and may be applied in various practical scenarios requiring digit recognition.
+
+
+## Objectives
+
+- **Data Preprocessing:** Clean and prepare the data for model training.
+- **Model Development:** Implement Support Vector Machine (SVM), Random Forest, and Decision Tree classifiers.
+- **Model Training and Evaluation:** Train the models on the training set and evaluate their performance using metrics such as accuracy, precision, recall, and F1-score.
+- **Model Comparison:** Compare the models to identify the best performer in terms of classification accuracy and generalization.
+- **Conclusion:** Summarize the findings and provide recommendations for potential improvements.
+
+*The dataset and results are used for educational purposes, demonstrating the application of machine learning techniques on image-based data. The aim is to build effective machine-learning models to classify handwritten digits and to gain a deeper understanding of these techniques.*
+
 
 ## About the Dataset
 
-The dataset is a commonly used dataset known as the "Adult" dataset or "Census Income" dataset. It is primarily used for machine learning tasks, particularly classification. The goal is often to predict whether an individual earns more than $50,000 a year based on various demographic and employment-related attributes
+The dataset consists of samples of handwritten digits, where each sample is represented by a set of 16 features derived from the digit's trajectory. These features capture various aspects of the digit's shape and movement during writing.
 
-The dataset is available on [UCI Machine Learning Repository](https://www.kaggle.com/datasets/uciml/adult-census-income)
+- **Dataset:** Handwritten Digits Dataset
+- **Content:** Data on various features extracted from handwritten digits.
+- **Number of Rows:** 10992
+- **Number of Columns:** 17 (16 input features + 1 class label)
 
-**Dataset:** Census Adult Income
 
-- **Content**: Data on various demographic and employment-related attributes of individuals.
-- **Number of Rows**: 32,561
-- **Number of Columns**: 15
+| **INPUTS**      | **Description**                                                                                     |
+|-----------------|-----------------------------------------------------------------------------------------------------|
+| **input1-input16** | Integer values representing different characteristics of the digit's trajectory, such as coordinates and angles. |
+| **class**       | Categorical variable representing the digit label (0-9).                                            |
 
-**INPUTS**
 
-| No | Feature            | Description                                                                              |
-|----|--------------------|------------------------------------------------------------------------------------------|
-| 1  | **age**            | Integer value representing the age of the individual.                                    |
-| 2  | **workclass**      | Categorical variable indicating the type of employer (e.g., Private, Self-emp-not-inc, etc.). |
-| 3  | **fnlwgt**         | Continuous variable representing the final weight, which is a proxy for the number of people represented by the individual. |
-| 4  | **education**      | Categorical variable indicating the highest level of education achieved (e.g., Bachelors, HS-grad, etc.). |
-| 5  | **education.num**  | Integer value representing the numerical encoding of education levels.                   |
-| 6  | **marital.status** | Categorical variable indicating the marital status of the individual (e.g., Married-civ-spouse, Divorced, etc.). |
-| 7  | **occupation**     | Categorical variable representing the individual's occupation (e.g., Tech-support, Craft-repair, etc.). |
-| 8  | **relationship**   | Categorical variable representing the individual's relationship status within a family (e.g., Wife, Own-child, etc.). |
-| 9  | **race**           | Categorical variable indicating the race of the individual (e.g., White, Black, etc.).   |
-| 10 | **sex**            | Categorical variable indicating the gender of the individual (Male or Female).           |
-| 11 | **capital.gain**   | Continuous variable representing the capital gains received by the individual.           |
-| 12 | **capital.loss**   | Continuous variable representing the capital losses incurred by the individual.          |
-| 13 | **hours.per.week** | Continuous variable indicating the number of hours the individual works per week.        |
-| 14 | **native.country** | Categorical variable representing the country of origin for the individual (e.g., United-States, Mexico, etc.). |
-| 15 | **income**         | Categorical variable indicating the income category of the individual (<=50K or >50K).   |
+The dataset is commonly used for training and evaluating machine learning models to recognize handwritten digits, making it an ideal candidate for classification tasks in computer vision.
 
-*The dataset is often used for predictive modelling to understand how different demographic and employment factors relate to income levels. It contains both categorical and continuous variables, making it a versatile dataset for various types of machine-learning algorithms.*
 
-## Details About the Dataset
-
-This dataset was extracted from the 1994 [Census Income Bureau database](https://www.census.gov/en.html) by Ronny Kohavi and Barry Becker. It contains clean records meeting specific criteria, such as age greater than 16 and hours worked per week greater than zero. The main goal is to predict whether an individual earns more than $50K per year.
-
-**Description of `fnlwgt` (Final Weight):** To understand the dataset's origin, extraction conditions, and the methodology behind the `fnlwgt` feature.
-The `fnlwgt` feature represents weights controlled to independent estimates of the civilian noninstitutional population of the US, prepared monthly by the Census Bureau's Population Division. The weighting program uses three sets of controls:
-
-1. Population aged 16+ for each state.
-2. Hispanic origin by age and sex.
-3. Race by age and sex.
-
-These controls are applied multiple times to ensure accuracy. The weights ensure that people with similar demographic characteristics have similar weights, but this is only applicable within each state due to the sampling method.
-
-### Relevant Papers
-
-- Ron Kohavi, [Scaling Up the Accuracy of Naive-Bayes Classifiers: a Decision-Tree Hybrid](https://www.researchgate.net/publication/2669468_Scaling_Up_the_Accuracy_of_Naive-Bayes_Classifiers_a_Decision-Tree_Hybrid), Proceedings of the Second International Conference on Knowledge Discovery and Data Mining, 1996.
-
+**Relevant Paper:**
+- Alimoglu, F., & Alpaydin, E. (1997, August). Combining multiple representations and classifiers for pen-based handwritten digit recognition. In Proceedings of the Fourth International Conference on Document Analysis and Recognition (Vol. 2, pp. 637-640). IEEE. DOI: 10.24432/C5MG6K 
 ----
 
 ## Conclusion:
 
-**Final Model:** SVM Model
+**Final Model:** SVM Model with GridSearchCV 
 
 *Parameters:*
-- recall: 85,  
-- F1: 0.87   
-- PRC: 0.76  
+- Accuracy: 0.993 
+- f1: 0.993   
+- Incorrect Predictions: 8
 ---
 
-In this project, we used logistic regression, SVM, and KNN models to predict income levels on an unbalanced dataset. We focused on F1 and recall scores to evaluate performance, as they are critical in **unbalanced datasets** where the minority class (higher income) is key.
+**Overall:**
 
-### Why SVM was Chosen:
-- **Balanced Performance**: The SVM model achieved a strong balance between precision and recall, with an F1 score of 0.87 and a recall of 0.85 on the test set. This makes it effective at identifying high-income individuals while keeping false positives low.
-- **Consistency**: SVM showed stable performance across training and test sets, indicating good generalization without overfitting.
+In this project, we used SVM, Random Forest, and Decision Tree models to classify handwritten digits based on coordinate-based features. Given the complexity of the dataset, we prioritized accuracy and F1 scores to evaluate model performance, ensuring both precision and recall were balanced.
 
-### Importance of F1 and Recall:
-- **F1 Score**: This metric combines precision and recall, ensuring the model performs well with both false positives and false negatives in mind.
-- **Recall**: Prioritizing recall ensures we capture most high-income individuals, which is vital in unbalanced datasets.
+- **SVM Model**: Demonstrates the highest performance with both accuracy and F1 scores at 0.993.
+- **Random Forest (RF) Model**: Follows closely behind SVM with accuracy and F1 scores of 0.978.
+- **Decision Tree (DT) Model**: Shows the lowest performance among the three, with accuracy at 0.956 and F1 score at 0.957.
 
-📌 In short, the SVM model’s balanced precision and recall, along with its consistent performance, make it the best choice as the final model for predicting income levels.
+**Final Model Selection:**
 
-💹 It’s possible that with further parameter tuning, even better performance could be achieved, which could be worth exploring.
+Based on the results, the **SVM model** was selected as the final model. It consistently outperforms the other models in both accuracy and F1 score, indicating its strong ability to generalize and accurately classify the data.
 
+**Reason:**
 
-### Key Insights:
-- **Education and Occupation**: Higher education and certain occupations (e.g., executive roles) are strong predictors of higher income.
-- **Marital Status and Work Hours**: Being married and working more hours are linked to higher income, though the effect of work hours plateaus.
+- **High Accuracy and F1 Score**: The SVM model achieves the highest accuracy and F1 score, which suggests it is the best at both correctly predicting the class labels (accuracy) and balancing precision and recall (F1 score).
+  
+- **Data Characteristics**: Given the nature of the dataset, which involves complex patterns due to high-dimensional coordinate-based features, SVM's ability to find an optimal hyperplane in high-dimensional space makes it particularly effective.
 
-### Recommendations:
-- **Policy Interventions**: Focus on improving access to higher education and closing the gender wage gap.
-- **Model Refinement**: Enhance models by incorporating additional features and exploring advanced techniques for better accuracy.
-
+- **Importance of F1 Score**: The F1 score is especially important in cases where the dataset may be imbalanced, ensuring that the model is not only accurate but also effective at managing false positives and false negatives. SVM excels in this regard, as shown by its top F1 score.
 ---
 
 ## ⬇️Installation
@@ -118,8 +97,8 @@ In this project, we used logistic regression, SVM, and KNN models to predict inc
 *To view the notebook online, visit my **Kaggle** profile.*
 *If you find this work helpful, don't forget to give it an 👍 UPVOTE! and join the discussion!*
 
- - Kaggle Notebook:** [💵Income Classification (Logistic-KNN-SVM)💰](https://www.kaggle.com/code/duygujones/income-classification-logistic-svm-knn)
- - The dataset is available to download on the Kaggle website / UCI Machine Learning Repository: [Adult Census Income](https://www.kaggle.com/datasets/uciml/adult-census-income)
+ - Kaggle Notebook:** [Handwritten Digit Recognition-SVM-DT-RF🔢📝](https://www.kaggle.com/code/duygujones/handwritten-digit-recognition-svm-dt-rf)
+ - The dataset is available to download on the Kaggle website / UCI Machine Learning Repository: [Handwritten_Digits_Recognition](https://www.kaggle.com/datasets/duygujones/pen-based-handwritten-digit)
 
 ## 🤝Contributing
 
