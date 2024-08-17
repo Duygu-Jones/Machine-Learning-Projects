@@ -58,7 +58,7 @@ The dataset is commonly used for training and evaluating machine learning models
 
 
 **Relevant Paper:**
-- Alimoglu, F., & Alpaydin, E. (1997, August). Combining multiple representations and classifiers for pen-based handwritten digit recognition. In Proceedings of the Fourth International Conference on Document Analysis and Recognition (Vol. 2, pp. 637-640). IEEE. DOI: 10.24432/C5MG6K 
+- Alimoglu, F., & Alpaydin, E. (1997, August). Combining multiple representations and classifiers for pen-based handwritten digit recognition. In Proceedings of the Fourth International Conference on Document Analysis and Recognition (Vol. 2, pp. 637-640). IEEE. DOI: 10.24432/C5MG6K  
 ----
 
 ## Conclusion:
@@ -97,8 +97,9 @@ Based on the results, the **SVM model** was selected as the final model. It cons
 *To view the notebook online, visit my **Kaggle** profile.*
 *If you find this work helpful, don't forget to give it an 👍 UPVOTE! and join the discussion!*
 
- - Kaggle Notebook:** [Handwritten Digit Recognition-SVM-DT-RF🔢📝](https://www.kaggle.com/code/duygujones/handwritten-digit-recognition-svm-dt-rf)
- - The dataset is available to download on the Kaggle website / UCI Machine Learning Repository: [Handwritten_Digits_Recognition](https://www.kaggle.com/datasets/duygujones/pen-based-handwritten-digit)
+ - Kaggle Notebook: [Handwritten Digit Recognition-SVM-DT-RF🔢📝](https://www.kaggle.com/code/duygujones/handwritten-digit-recognition-svm-dt-rf)
+ - The dataset is available to download on the Kaggle website: [Handwritten_Digits_Recognition](https://www.kaggle.com/datasets/duygujones/pen-based-handwritten-digit)
+ - Relevant Article:[Pen-Based Recognition of Handwritten Digits](https://archive.ics.uci.edu/dataset/81/pen+based+recognition+of+handwritten+digits)
 
 ## 🤝Contributing
 
