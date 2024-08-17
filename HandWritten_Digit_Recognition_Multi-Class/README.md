@@ -98,8 +98,8 @@ Based on the results, the **SVM model** was selected as the final model. It cons
 *If you find this work helpful, don't forget to give it an 👍 UPVOTE! and join the discussion!*
 
  - Kaggle Notebook: [Handwritten Digit Recognition-SVM-DT-RF🔢📝](https://www.kaggle.com/code/duygujones/handwritten-digit-recognition-svm-dt-rf)
- - The dataset is available to download on the Kaggle website: [Handwritten_Digits_Recognition](https://www.kaggle.com/datasets/duygujones/pen-based-handwritten-digit)
- - Relevant Article:[Pen-Based Recognition of Handwritten Digits](https://archive.ics.uci.edu/dataset/81/pen+based+recognition+of+handwritten+digits)
+ - The dataset is available to download on the Kaggle: [Handwritten_Digits_Recognition](https://www.kaggle.com/datasets/duygujones/pen-based-handwritten-digit)
+ - Relevant Paper: [Pen-Based Recognition of Handwritten Digits-Article](https://archive.ics.uci.edu/dataset/81/pen+based+recognition+of+handwritten+digits)
 
 ## 🤝Contributing
 
