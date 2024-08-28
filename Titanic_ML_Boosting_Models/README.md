@@ -1,11 +1,13 @@
 <h1 align="center">
-Handwritten Digit Recognition with ML Classification Models🔢📝
-  
-SVM - Random Forest - Decision Tree 📈⚙️
+🚢Titanic Survival Prediction: <br> ⚓ Advanced Ensemble ML Models for Improved Accuracy📈
 </h1>
 
+<h3 align="center"> 🚀Decision Tree - Random Forest - AdaBoost - Gradient - XGBoost - LightBoost - CatBoost - Stacking⚙️ </h3>
+
+![](https://upload.wikimedia.org/wikipedia/commons/3/33/Titanic_sinking_gif.gif)
+
 <p align="center">
-  <img src="https://github.com/Duygu-Jones/Machine-Learning-Projects/blob/main/HandWritten_Digit_Recognition_Multi-Class/img/digits2x.png?raw=true"
+  <img src="https://i.pinimg.com/originals/33/8e/c5/338ec5a6964c3cb1778b4ad6dc4da88e.gif"
 ">
 </p>
 
