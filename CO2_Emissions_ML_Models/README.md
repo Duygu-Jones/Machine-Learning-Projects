@@ -90,7 +90,7 @@ To further improve the analysis and model performance:
 
 *To view the notebook online, visit my **Kaggle** profile.*
 *If you find this work helpful, don't forget to give it an 👍 UPVOTE! and join the discussion!*
-**Kaggle Notebook:** [CO2 Emissions (EDA and ML) Linear Regression](https://www.kaggle.com/code/duygujones/co2-emissions-analysis-and-prediction)
+**Kaggle Notebook:** [CO2 Emissions (EDA and ML) Linear Regression](https://www.kaggle.com/code/duygujones/co2-emissions-predict-eda-ml-step-by-step)
 
  - This dataset is available to download on the Kaggle website: [CO2 Emissions_Canada.csv](https://www.kaggle.com/datasets/debajyotipodder/co2-emission-by-vehicles)
  - Acknowledgements: Official open data website of Canada Government [Link](https://open.canada.ca/data/en/dataset/98f1a129-f628-4ce4-b24d-6f16bf24dd64#wb-auto-6)
