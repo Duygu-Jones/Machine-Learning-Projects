@@ -2,7 +2,7 @@
 🤖 Machine-Learning Projects 📊🚀
 </h1>
 
-Welcome to the ML Projects repository! 🎉🎈
+Welcome to the ML Projects repository!🎉🎈
 
 This repository contains a diverse collection of machine learning projects, each showcasing different techniques and methodologies.
 
